@@ -10,9 +10,12 @@ Please connect with me!
 I'm happy to chat and help with anything ranging from forensics, threat hunting, pentesting and red teaming!
 
 
-# Arsenal of Tools for Digital Forensics
-I ran out of time to include this content into the slides, but I wanted you to have a look at the physical tools for digital forensics.
-  
+# Extra Content about Digital Forensics
+I ran out of time to include this content into the slides, but I also wanted you to have a look at:
+1. Physical tools for Digital Forensics
+2. What actual forensics investigations look like.
+
+## Physical tools for Digital Forensics  
 To collect evidence, you're going to need some tools to perform forensics **acquisition**
   
 ### Write Blockers
@@ -32,6 +35,34 @@ Loads of legacy connectors, because you never know what you might need. Otherwis
   
 <img width="800" height="600" alt="Mobile_Acq" src="https://github.com/user-attachments/assets/c9618a72-06f5-434f-b244-0dd2e76a06b3" />
 
+## What actual forensics investigations look like
+Let's talk about what investigations in the past, present and near future look like.
+
+### Investigations in the past
+Investigations in the past were manual and low level, and you had to have deep knowledge of each artifact.
+  
+For example, after opening a Word document, a shortcut LNK file is created in C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Recent
+  
+You would load that LNK file into a Hex editor, pinpoint the specific location in the file where the critical information is, and convert them to timestamps.
+  
+<img width="580" height="618" alt="image" src="https://github.com/user-attachments/assets/fb538d25-5915-47c6-9e4d-fb890d08582e" />
+
+### Investigations in the present
+Investigations in the present are much faster. Run a tool, it extracts everything for you.
+
+You can even script and automate!
+
+<img width="574" height="277" alt="image" src="https://github.com/user-attachments/assets/f846aed2-6b95-4353-ad8b-3792b82096ee" />
+
+### Investigations in the near future
+Investigation in the near future could be just throwing forensics artifacts into AI models for information extraction and analysis.
+
+<img width="666" height="362" alt="image" src="https://github.com/user-attachments/assets/da04849f-1b9c-4768-baa6-f90f8dc0326e" />
+    
+**But** forensics workstations tend to be isolated and not connected to the internet, so you might need to use local offline open weight models instead.
+  
+**Also** you'll still need to know what forensic artifacts contain what critical information, and how to manually extract that info out yourselves to **verify that the AI model isn't hallucinating or lying to you**
+  
 
 # Training Resources
 I mentioned some training resources in my sharing session:  
